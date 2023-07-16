@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "pixel-physician",
+    "pixel-physician-tilr",
+]
+
+[workspace.package]
+version = "0.1.0-dev"
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+[workspace.dependencies]
+image = "0.24.6"
+rayon = "1.7.0"
+
+[profile.release]
+debug = true

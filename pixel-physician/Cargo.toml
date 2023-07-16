@@ -1,0 +1,31 @@
+[package]
+name = "pixel-physician"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+
+[dependencies]
+thiserror = "1.0.40"
+humantime = "2.1.0"
+three-d = "0.15.0"
+# inherit version from three-d
+winit = "*"
+cgmath = "*"
+# inherit version from x11rb
+x11rb-protocol = "*"
+rand = "0.8.5"
+pixel-physician-tilr = { path = "../pixel-physician-tilr" }
+image = { workspace = true }
+rayon = { workspace = true }
+
+[dependencies.x11rb]
+version = "0.12.0"
+features = ["image"]
+
+[dependencies.clap]
+version = "4.3.12"
+features = ["derive"]
+
+[dependencies.three-d-asset]
+version = "0.5.0"
+features = ["bmp", "gif", "hdr", "jpeg", "png", "tga", "tiff", "data-url"]
