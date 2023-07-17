@@ -247,7 +247,7 @@ enum MosaicState {
     /// Currently displaying level [level].
     /// When `remaining_time` elapses, we will display level [level + 1].
     /// When we reach the last level, we will wait for `remaining_time` and
-    /// then go back to `TransparentDrawSubmitted`.
+    /// then go back to `TransparentDraw`.
     DisplayingMosaic {
         wrote_level: bool,
         remaining_time: f64,

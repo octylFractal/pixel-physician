@@ -1137,7 +1137,7 @@ dependencies = [
 
 [[package]]
 name = "pixel-physician"
-version = "0.1.0"
+version = "0.1.0-dev"
 dependencies = [
  "cgmath",
  "clap",
@@ -1156,7 +1156,7 @@ dependencies = [
 
 [[package]]
 name = "pixel-physician-tilr"
-version = "0.1.0"
+version = "0.1.0-dev"
 dependencies = [
  "image",
  "rayon",
